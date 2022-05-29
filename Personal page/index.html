@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e36fa0558b.js" crossorigin="anonymous"></script>
+    <title>Grubner Patrik</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Nav section -->
+    <nav class="navigation" id="navigation">
+        <div class="nav_container">
+            <a href="#main" class="nav_logo">Grubner Patrik</a>
+            <div class="nav_toggle" id="mobile_menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav_links_container">
+                <li class="nav_item"><a href="#main">Domů</a></li>
+                <li class="nav_item"><a href="#about">Něco o mně</a></li>
+                <li class="nav_item"><a href="#projects">Projekty</a></li>
+                <li class="nav_item"><a href="#contact"><i class="fa-solid fa-address-card"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="scroll_wrap">
+        <div class="page_container">
+            <section class="section main" id="main">
+                <div class="main_container">
+                    <div class="main_left">
+                        <h2 class="main_heading">Jmenuji se
+                            <span class="pg">
+                                Patrik Grubner
+                            </span>
+                            a jsem nadšencem pro webové technologie.
+                        </h2>
+                        <p>Sháním zaměstnání na juniorské pozici Front-end vývojáře, od kterého očekávám obohacení
+                            svých znalostí a nabytí potřebných zkušeností.</p>
+                        <p>Seberozvoji v tomto odvětví věnuji většinu svého času a cítím pocit naplnění z každého nového
+                            řádku čistého kódu, který plní svůj účel.</p>
+                        <p>I přes nedostatečnou praxi věřím, že se nabídne pracovní pozice, která mimo rozšíření mých
+                            znalostí a poskytnutí know-how jak to v praxi reálně funguje, poslouží taktéž jako dvířka do
+                            světa pokročilého webu.</p>
+                    </div>
+                    <div class="main_right"><img src="img/CVfoto.jpeg" class="cv_photo"></div>
+                </div>
+            </section>
+            <section class="section about" id="about">
+                <div class="about_container">
+                    <div class="about_left">
+                        <img src="img/about-logos.png" class="about_logos">
+                        <!-- <img src="img/react-js.png" class="react">
+                <img src="img/css-logo.png" class="css">
+                <img src="img/html-logo.png" class="html">
+                <img src="img/javascript-logo.png" class="javascript">
+                <img src="img/sql-logo.png" class="sql">
+                <img src="img/vs-logo.png" class="visualstudio">
+                <i class="fa-solid fa-code"></i> -->
+                    </div>
+                    <div class="about_right">
+                        <p class="about_text">Od momentu, co jsem poprvé na konzoli spatřil "Hello World",
+                            odstartovala má vášeň pro programování. Láska k počítačům mě
+                            provázela
+                            celý život a už od útlého věku jsem zkoušel všemožné webovky, hry, či programy. Bylo to však
+                            vývojářské
+                            prostředí v prohlížeči, které mě již nepustilo. Prošel jsem si základy HTML, CSS a
+                            JavaScriptu
+                            formou kurzů/videí a ponořil se do dlouhých nočních hrátek s webovými technologiemi.
+                            Od jednoduchých záhlaví a tabulek, přes jednostránkové projekty až po responzivní designy
+                            statických
+                            webů, na který se právě dívate.
+                            Mým cílem je se zlepšovat a věnovat všechen volný čas právě webovým technologiím.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section projects" id="projects">
+                <div class="projects_container">
+                    <div class="project_item_container">
+                        <a href="files/Grubner Patrik CV.docx" class="project_item1"><img src="img/cv-img.jpg"
+                                class="cv_img"></a>
+                        <h2 class="project_item_desc">CV</h2>
+                    </div>
+                    <div class="project_item_container">
+                        <a href="weather/index.html" target="_blank" class="project_item2"><img class="weather_app_img"
+                                src="img/weather-app.png"></img></a>
+                        <h2 class="project_item_desc">Aplikace počasí</h2>
+                    </div>
+                    <div class="project_item_container">
+                        <a href="files/SEMESTRÁLNÍ-PRÁCE databázové systémy.pdf" target="_blank"
+                            class="project_item3"><img src="/img/45211.jpg" class="sql_img"></a>
+                        <h2 class="project_item_desc">SQL databáze</h2>
+                    </div>
+                    <div class="project_item_container">
+                        <a href="help-ukraine/index.html" target="_blank" class="project_item4"><img
+                                src="img/help-ukraine.png" class="hu_img"></a>
+                        <h2 class="project_item_desc">Webová stránka</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="section contact" id="contact">
+                <div class="contact_container">
+                    <ul class="contact_list">
+                        <li class="contact_item"><i class="fa-solid fa-envelope" onclick="typeWriterMail()"></i></li>
+                        <li class="contact_item"><i class="fa-solid fa-phone" onclick="typeWriterPhone()"></i></li>
+                    </ul>
+                    <div class="paragraph_holder">
+                        <p id="email"></p>
+                        <p id="phone"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
